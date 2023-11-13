@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 void main() {
   runApp(
+
       MyApp()
   );
 }
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return    MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -38,6 +41,12 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
                   ),
+                  ),
+                  SizedBox(
+                    width: 150.0,
+                    child: Divider(
+                      color:Colors.white,
+                    ),
                   ),
                   Card(
 
